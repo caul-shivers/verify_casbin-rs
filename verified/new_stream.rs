@@ -1,4 +1,15 @@
-//
+// This file is verifying the file: effector.rs
+
+// This file originally does: initializes a DefaultEffectStream scoreboard for Casbin rule evaluation based on a valid effect expression and rule capacity
+// This file verified this file by: proving via Verus that calling `new_stream` with a supported rule mode and non-zero capacity correctly initializes the scoreboard state
+// (`done` is false, `idx` is 0, capacity matches, and the starting result `res` matches the mathematical definition of `initial_res` for that mode)
+// There should be 1 case verified
+// Last edited: October 30, 2026
+
+
+
+
+
 // What we are proving here: 
 // When you create a new authorization "scoreboard" (the stream) with a valid rule mode 
 // and at least 1 rule to check, it starts perfectly clean. `done` is false, `idx` is 0, 
